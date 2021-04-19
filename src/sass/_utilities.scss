@@ -1,13 +1,14 @@
-.gradient-border {
+.border-gradient {
   display: block;
-  width: 4rem;
-  height: 1.5rem;
-  background-color: $gradient;
+  width: 8rem;
+  height: 1.2rem;
+  background: $gradient;
 }
 
 .sub-heading {
   font-size: 7rem;
   font-weight: 600;
+  line-height: 1.5;
 
   &.light {
     color: $color-white;

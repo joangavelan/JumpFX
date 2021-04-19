@@ -1,13 +1,14 @@
-.gradient-border {
+.border-gradient {
   display: block;
-  width: 4rem;
-  height: 1.5rem;
-  background-color: linear-gradient(to right, #03BBFF, #37D5DB);
+  width: 8rem;
+  height: 1.2rem;
+  background: linear-gradient(to right, #03BBFF, #37D5DB);
 }
 
 .sub-heading {
   font-size: 7rem;
   font-weight: 600;
+  line-height: 1.5;
 }
 
 .sub-heading.light {
@@ -23,7 +24,9 @@
 }
 
 .content-wrapper {
-  max-width: 130rem;
+  max-width: 140rem;
+  position: relative;
+  z-index: 99;
   margin: 0 auto;
 }
 
@@ -134,21 +137,22 @@ input {
 
 .hero__heading {
   text-shadow: 0 0 7px #333;
+  margin-top: 2.5rem;
 }
 
 .hero__heading h2 {
-  font-size: 8.5rem;
-  line-height: 1.5;
+  font-size: 9rem;
+  line-height: 1.45;
   font-weight: 600;
 }
 
 .hero__heading h1 {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 500;
 }
 
 .hero__buttons {
-  margin: 3.5rem 0;
+  margin: 4rem 0;
 }
 
 .hero__buttons button {
@@ -222,9 +226,10 @@ input {
 
 .who {
   position: relative;
-  background: url("http://jumpfx.test/wp-content/uploads/2021/04/pexels-photo-459225.png") no-repeat center;
+  background: url("http://jumpfx.test/wp-content/uploads/2021/04/pexels-photo-459225.png") no-repeat;
+  background-position: 0 60%;
   background-size: cover;
-  padding: 10rem 3rem;
+  padding: 8.5rem 3rem;
   color: #222222;
 }
 
@@ -235,11 +240,13 @@ input {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
 }
 
-.who div {
-  position: relative;
-  z-index: 99;
+.who p {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 2rem 0;
 }
 /*# sourceMappingURL=main.css.map */
