@@ -134,6 +134,12 @@ textarea {
   z-index: 10;
 }
 
+@media only screen and (max-width: 48em) {
+  .nav {
+    max-width: 100%;
+  }
+}
+
 .nav__hamburger {
   font-size: 3rem;
   display: none;

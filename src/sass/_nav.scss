@@ -8,6 +8,10 @@
   padding: 3rem;
   z-index: 10;
 
+  @media only screen and (max-width: $phone) {
+    max-width: 100%;
+  }
+
   &__hamburger {
     font-size: 3rem;
     display: none;
