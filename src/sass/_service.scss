@@ -1,0 +1,24 @@
+.service {
+  position: relative;
+  background: url('http://jumpfx.test/wp-content/uploads/2021/04/action-adults-business-926984.png') no-repeat;
+  background-position: 0 20%;
+  background-size: cover;
+  padding: 12rem 3rem;
+  color: $color-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.7);
+  }
+
+  & p {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin: 2rem 0;
+  }
+}

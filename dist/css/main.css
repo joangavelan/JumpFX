@@ -1,6 +1,6 @@
 .border-gradient {
   display: block;
-  width: 8rem;
+  width: 10rem;
   height: 1.2rem;
   background: linear-gradient(to right, #03BBFF, #37D5DB);
 }
@@ -9,6 +9,7 @@
   font-size: 7rem;
   font-weight: 600;
   line-height: 1.5;
+  text-transform: capitalize;
 }
 
 .sub-heading.light {
@@ -246,6 +247,31 @@ input {
 .who p {
   font-size: 2rem;
   font-weight: 600;
+  line-height: 1.6;
+  margin: 2rem 0;
+}
+
+.service {
+  position: relative;
+  background: url("http://jumpfx.test/wp-content/uploads/2021/04/action-adults-business-926984.png") no-repeat;
+  background-position: 0 20%;
+  background-size: cover;
+  padding: 12rem 3rem;
+  color: #fff;
+}
+
+.service::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.service p {
+  font-size: 2rem;
   line-height: 1.6;
   margin: 2rem 0;
 }

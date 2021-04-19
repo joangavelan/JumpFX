@@ -1,6 +1,6 @@
 .border-gradient {
   display: block;
-  width: 8rem;
+  width: 10rem;
   height: 1.2rem;
   background: $gradient;
 }
@@ -9,6 +9,7 @@
   font-size: 7rem;
   font-weight: 600;
   line-height: 1.5;
+  text-transform: capitalize;
 
   &.light {
     color: $color-white;
