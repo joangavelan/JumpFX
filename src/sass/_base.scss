@@ -23,7 +23,8 @@ ul {
   list-style: none;
 }
 
-button {
+button,
+input[type="submit"] {
   font-family: $font-primary;
   color: $color-white;
   text-transform: capitalize;
@@ -34,8 +35,10 @@ button {
   border-radius: 5px;
 }
 
-input {
+input,
+textarea {
   display: block;
   outline: 0;
   padding: 1.8rem 1.2rem;
+  font-family: $font-primary;
 }
