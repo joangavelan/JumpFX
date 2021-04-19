@@ -1,0 +1,17 @@
+.btn-primary {
+  background: $gradient border-box;
+  padding: 1.3rem 2rem;
+  font-size: $font-sm;
+  border: 4px solid transparent;
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+
+  &.unhovered {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-color: $color-lightBlue;
+  }
+}

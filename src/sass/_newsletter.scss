@@ -1,0 +1,50 @@
+.newsletter {
+  background: $gradient;
+  padding: 5rem 3rem;
+  color: $color-white;
+
+  & p {
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2em;
+
+    & div {
+
+      & label {
+        display: inline-block;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      & input {
+        width: 100%;
+        font-size: $font-sm;
+        border: none;
+        font-size: 2rem;
+      }
+    }
+
+    & input[type="submit"] {
+      font-size: 2rem;
+      display: block;
+      height: max-content;
+      margin-top: auto;
+      font-weight: bold;
+      background-color: $color-blue;
+      color: white;
+      text-transform: capitalize;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+* {
+  box-sizing: inherit; 
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $font-primary;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: $font-primary;
+  color: $color-white;
+  text-transform: capitalize;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+input {
+  display: block;
+  outline: 0;
+  padding: 1.8rem 1.2rem;
+}

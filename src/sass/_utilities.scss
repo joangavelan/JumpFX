@@ -1,0 +1,30 @@
+.gradient-border {
+  display: block;
+  width: 4rem;
+  height: 1.5rem;
+  background-color: $gradient;
+}
+
+.sub-heading {
+  font-size: 7rem;
+  font-weight: 600;
+
+  &.light {
+    color: $color-white;
+  }
+
+  &.dark {
+    color: $color-gray-dark;
+  }
+
+  &.center {
+    text-align: center;
+  }
+}
+
+.content-wrapper {
+  max-width: $content-width;
+  position: relative;
+  z-index: 99;
+  margin: 0 auto;
+}

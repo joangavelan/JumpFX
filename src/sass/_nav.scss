@@ -1,0 +1,40 @@
+.nav {
+  position: relative;
+  max-width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 3rem;
+  z-index: 10;
+}
+
+.logo img {
+  width: 20rem;
+}
+
+//menu
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+#menu-main-menu {
+  display: flex;
+  margin: 0 2rem;
+
+  & li {
+    margin: 0 1.5rem;
+  }
+
+  & a {
+    font-size: $font-sm;
+    font-weight: 700;
+    color: $color-white;
+    transition: all .2s ease;
+
+    &:hover {
+      color: #A4E7FF;
+    }
+  }
+}
