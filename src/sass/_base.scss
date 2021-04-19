@@ -7,6 +7,14 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: $laptop) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $phone) {
+    font-size: 52.5%;
+  }
 }
 
 body {

@@ -31,3 +31,14 @@
 .mt-3 {
   margin-top: 3rem;
 }
+
+@media only screen and (max-width: $tablet) {
+  .sub-heading {
+    font-size: 4.5rem;
+  }
+
+  .border-gradient {
+    width: 6rem;
+    height: 1rem;
+  }
+}

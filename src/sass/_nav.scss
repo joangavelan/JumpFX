@@ -7,6 +7,17 @@
   margin: 0 auto;
   padding: 3rem;
   z-index: 10;
+
+  &__hamburger {
+    font-size: 3rem;
+    display: none;
+    background-color: #A4E7FF;
+    padding: 5px 1rem;
+
+    @media only screen and (max-width: $tablet) {
+      display: block;
+    }
+  }
 }
 
 .logo img {
@@ -17,6 +28,10 @@
 .menu {
   display: flex;
   align-items: center;
+
+  @media only screen and (max-width: $tablet) {
+    display: none;
+  }
 }
 
 #menu-main-menu {

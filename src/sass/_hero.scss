@@ -1,7 +1,7 @@
 .hero {
   max-width: max-content;
   margin: 0 auto;
-  padding: 10rem 0;
+  padding: 10rem 3rem;
   color: $color-white;
   text-align: center;
   text-transform: capitalize;
@@ -19,6 +19,16 @@
       font-size: 3.8rem;
       font-weight: 500;
     }
+
+    @media only screen and (max-width: $tablet) {
+      & h2 {font-size: 5rem;}
+      & h1 {font-size: 2.5rem;}
+    }
+    
+    @media only screen and (max-width: $phone) {
+      & h2 {font-size: 3.5rem;}
+      & h1 {font-size: 2rem; line-height: 1.75;}
+    }
   }
 
   &__buttons {
@@ -27,7 +37,16 @@
     & button {
       font-size: 2.4rem;
       padding: 2rem 4rem;
-      margin: 0 1rem;
+      margin: 1rem;
+
+      @media only screen and (max-width: $tablet) {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+      }
+
+      @media only screen and (max-width: $phone) {
+        font-size: 1.7rem;
+      }
     }
   }
 }

@@ -28,7 +28,11 @@
     margin: 3rem 0;
 
     & div:nth-child(2) {
-      margin: 0 8rem;
+      margin: 0 7rem;
+
+      @media only screen and (max-width: $phone) {
+        margin: 0 3rem;
+      }
 
       & img {
         display: block;
@@ -40,12 +44,16 @@
       margin: 0;
 
       &:first-child {
-        font-size: 9rem;
+        font-size: 8rem;
         font-weight: 700;
         line-height: 1;
 
+        @media only screen and (max-width: $phone) {
+          font-size: 4rem;
+        }
+
         & span {
-          margin-left: 2.5rem;
+          margin-left: 15%;
         }
       }
 

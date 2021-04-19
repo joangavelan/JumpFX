@@ -32,6 +32,16 @@
   margin-top: 3rem;
 }
 
+@media only screen and (max-width: 64em) {
+  .sub-heading {
+    font-size: 4.5rem;
+  }
+  .border-gradient {
+    width: 6rem;
+    height: 1rem;
+  }
+}
+
 * {
   box-sizing: inherit;
   margin: 0;
@@ -41,6 +51,18 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+@media only screen and (max-width: 90em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  html {
+    font-size: 52.5%;
+  }
 }
 
 body {
@@ -83,7 +105,8 @@ textarea {
 }
 
 .grid-row.col-5 {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  grid-auto-rows: auto;
 }
 
 .header {
@@ -111,6 +134,19 @@ textarea {
   z-index: 10;
 }
 
+.nav__hamburger {
+  font-size: 3rem;
+  display: none;
+  background-color: #A4E7FF;
+  padding: 5px 1rem;
+}
+
+@media only screen and (max-width: 64em) {
+  .nav__hamburger {
+    display: block;
+  }
+}
+
 .logo img {
   width: 20rem;
 }
@@ -118,6 +154,12 @@ textarea {
 .menu {
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 64em) {
+  .menu {
+    display: none;
+  }
 }
 
 #menu-main-menu {
@@ -143,7 +185,7 @@ textarea {
 .hero {
   max-width: max-content;
   margin: 0 auto;
-  padding: 10rem 0;
+  padding: 10rem 3rem;
   color: #fff;
   text-align: center;
   text-transform: capitalize;
@@ -165,6 +207,25 @@ textarea {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 64em) {
+  .hero__heading h2 {
+    font-size: 5rem;
+  }
+  .hero__heading h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .hero__heading h2 {
+    font-size: 3.5rem;
+  }
+  .hero__heading h1 {
+    font-size: 2rem;
+    line-height: 1.75;
+  }
+}
+
 .hero__buttons {
   margin: 4rem 0;
 }
@@ -172,7 +233,20 @@ textarea {
 .hero__buttons button {
   font-size: 2.4rem;
   padding: 2rem 4rem;
-  margin: 0 1rem;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 64em) {
+  .hero__buttons button {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .hero__buttons button {
+    font-size: 1.7rem;
+  }
 }
 
 .footer {
@@ -204,6 +278,14 @@ textarea {
   position: relative;
   font-size: 1.9rem;
   margin: 1.2rem;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 48em) {
+  .footer__nav a, .footer__legal-pages a {
+    font-size: 1.7rem;
+    line-height: 1.75;
+  }
 }
 
 .footer__nav a:not(:last-child):after, .footer__legal-pages a:not(:last-child):after {
@@ -272,10 +354,23 @@ textarea {
   margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 48em) {
+  .newsletter p {
+    font-size: 2rem;
+  }
+}
+
 .newsletter__form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2em;
+}
+
+@media only screen and (max-width: 48em) {
+  .newsletter__form {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
 }
 
 .newsletter__form div label {
@@ -291,6 +386,12 @@ textarea {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 48em) {
+  .newsletter__form div input {
+    font-size: 1.7rem;
+  }
+}
+
 .newsletter__form input[type="submit"] {
   font-size: 2rem;
   display: block;
@@ -304,6 +405,12 @@ textarea {
   outline: 0;
   cursor: pointer;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 48em) {
+  .newsletter__form input[type="submit"] {
+    font-size: 1.7rem;
+  }
 }
 
 .who {
@@ -394,6 +501,12 @@ textarea {
   padding: 0 5px;
 }
 
+@media only screen and (max-width: 64em) {
+  .process__step > p {
+    font-size: 1.7rem;
+  }
+}
+
 .process__step-numbers {
   position: relative;
 }
@@ -408,6 +521,12 @@ textarea {
   height: 3rem;
   background: linear-gradient(to right, #06BCFD, #016D96);
   z-index: -1;
+}
+
+@media only screen and (max-width: 78em) {
+  .process__step-numbers {
+    display: none;
+  }
 }
 
 .process__step-number {
@@ -490,7 +609,13 @@ textarea {
 }
 
 .facts__statistics div:nth-child(2) {
-  margin: 0 8rem;
+  margin: 0 7rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .facts__statistics div:nth-child(2) {
+    margin: 0 3rem;
+  }
 }
 
 .facts__statistics div:nth-child(2) img {
@@ -503,13 +628,19 @@ textarea {
 }
 
 .facts__statistics div p:first-child {
-  font-size: 9rem;
+  font-size: 8rem;
   font-weight: 700;
   line-height: 1;
 }
 
+@media only screen and (max-width: 48em) {
+  .facts__statistics div p:first-child {
+    font-size: 4rem;
+  }
+}
+
 .facts__statistics div p:first-child span {
-  margin-left: 2.5rem;
+  margin-left: 15%;
 }
 
 .facts__statistics div p:last-child {
@@ -539,12 +670,40 @@ textarea {
   align-items: flex-start;
 }
 
+@media only screen and (max-width: 64em) {
+  .contact__details {
+    max-width: 70rem;
+    margin: 5rem auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .contact__form {
+    grid-template-columns: 1fr;
+  }
+  .contact__form-entry.textarea, .contact__form-submit {
+    grid-area: auto !important;
+  }
+  .contact__form-calendar {
+    grid-area: 1 / 1 / 1 / 1 !important;
+  }
+}
+
 .contact__detail {
   display: flex;
 }
 
 .contact__detail:not(:first-child) {
   align-items: center;
+}
+
+@media only screen and (max-width: 48em) {
+  .contact__detail {
+    align-items: center;
+  }
 }
 
 .contact__detail img {
@@ -565,6 +724,13 @@ textarea {
   font-style: initial;
 }
 
+@media only screen and (max-width: 48em) {
+  .contact__detail address,
+  .contact__detail p {
+    font-size: 1.6rem;
+  }
+}
+
 .contact__form {
   margin: 3rem 0;
 }
@@ -573,6 +739,12 @@ textarea {
   display: inline-block;
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .contact__form-entry label {
+    font-size: 1.7rem;
+  }
 }
 
 .contact__form-entry input:not([type="submit"]),
@@ -587,6 +759,7 @@ textarea {
 
 .contact__form-calendar {
   grid-area: 1 / 4 / 3 / 5;
+  margin: 0 auto;
 }
 
 .contact__form-submit {

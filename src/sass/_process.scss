@@ -31,6 +31,10 @@
       font-size: 1.4rem;
       line-height: 1.5;
       padding: 0 5px;
+
+      @media only screen and (max-width: $tablet) {
+        font-size: 1.7rem;
+      }
     }
   }
 
@@ -47,6 +51,11 @@
       height: 3rem;
       background: linear-gradient(to right, #06BCFD, #016D96);
       z-index: -1;
+    }
+
+
+    @media only screen and (max-width: $tablet-h) {
+      display: none;
     }
   }
 
