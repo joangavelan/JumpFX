@@ -1,5 +1,5 @@
 .border-gradient {
-  display: block;
+  display: inline-block;
   width: 10rem;
   height: 1.2rem;
   background: $gradient;
@@ -10,6 +10,7 @@
   font-weight: 600;
   line-height: 1.5;
   text-transform: capitalize;
+  letter-spacing: -1px;
 
   &.light {
     color: $color-white;
@@ -18,10 +19,6 @@
   &.dark {
     color: $color-gray-dark;
   }
-
-  &.center {
-    text-align: center;
-  }
 }
 
 .content-wrapper {
@@ -29,4 +26,8 @@
   position: relative;
   z-index: 99;
   margin: 0 auto;
+}
+
+.mt-3 {
+  margin-top: 3rem;
 }

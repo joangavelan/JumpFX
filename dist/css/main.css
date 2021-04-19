@@ -1,5 +1,5 @@
 .border-gradient {
-  display: block;
+  display: inline-block;
   width: 10rem;
   height: 1.2rem;
   background: linear-gradient(to right, #03BBFF, #37D5DB);
@@ -10,6 +10,7 @@
   font-weight: 600;
   line-height: 1.5;
   text-transform: capitalize;
+  letter-spacing: -1px;
 }
 
 .sub-heading.light {
@@ -20,15 +21,15 @@
   color: #222222;
 }
 
-.sub-heading.center {
-  text-align: center;
-}
-
 .content-wrapper {
   max-width: 140rem;
   position: relative;
   z-index: 99;
   margin: 0 auto;
+}
+
+.mt-3 {
+  margin-top: 3rem;
 }
 
 * {
@@ -71,6 +72,15 @@ input {
   display: block;
   outline: 0;
   padding: 1.8rem 1.2rem;
+}
+
+.grid-row {
+  display: grid;
+  grid-column-gap: 2rem;
+}
+
+.grid-row.col-5 {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .header {
@@ -274,5 +284,105 @@ input {
   font-size: 2rem;
   line-height: 1.6;
   margin: 2rem 0;
+}
+
+.process {
+  padding: 8rem 3rem;
+}
+
+.process__heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.process__step {
+  padding: 3.5rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  box-shadow: 0 0 3.5rem rgba(119, 119, 119, 0.3);
+}
+
+.process__step > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  height: 5.5rem;
+}
+
+.process__step > img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  margin: 2rem 0;
+}
+
+.process__step > p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.process__step-numbers {
+  position: relative;
+}
+
+.process__step-numbers::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 85%;
+  height: 3rem;
+  background: linear-gradient(to right, #06BCFD, #016D96);
+  z-index: -1;
+}
+
+.process__step-number {
+  padding: 3rem;
+}
+
+.process__step-number span {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  width: 8rem;
+  height: 8rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+.process__step-number span::before {
+  position: absolute;
+  content: "step";
+  font-size: 1.8rem;
+  top: -3rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.process__step-number:nth-child(1) > span {
+  background: #06BCFD;
+}
+
+.process__step-number:nth-child(2) > span {
+  background: #17B4F0;
+}
+
+.process__step-number:nth-child(3) > span {
+  background: #009FDB;
+}
+
+.process__step-number:nth-child(4) > span {
+  background: #239AC7;
+}
+
+.process__step-number:nth-child(5) > span {
+  background: #016D96;
 }
 /*# sourceMappingURL=main.css.map */

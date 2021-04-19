@@ -1,0 +1,85 @@
+.process {
+  padding: 8rem 3rem;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  &__step {
+    padding: 3.5rem;
+    padding-bottom: 8rem;
+    text-align: center;
+    box-shadow: 0 0 3.5rem rgba(#777, 0.3);
+
+    & > h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      height: 5.5rem;
+    }
+
+    & > img {
+      width: 7rem;
+      height: 7rem;
+      object-fit: cover;
+      margin: 2rem 0;
+    }
+
+    & > p {
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+  }
+
+  &__step-numbers {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: "";
+      width: 85%;
+      height: 3rem;
+      background: linear-gradient(to right, #06BCFD, #016D96);
+      z-index: -1;
+    }
+  }
+
+  &__step-number {
+    padding: 3rem;
+
+    & span {
+      position: relative;
+      font-size: 4rem;
+      font-weight: 600;
+      display: flex;
+      width: 8rem;
+      height: 8rem;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 3px solid $color-white;
+      color: $color-white;
+
+      &::before {
+        position: absolute;
+        content: "step";
+        font-size: $font-sm;
+        top: -3rem;
+        color: #000;
+        text-transform: uppercase;
+      }
+    }
+
+    &:nth-child(1) > span {background: #06BCFD;}
+    &:nth-child(2) > span {background: #17B4F0;}
+    &:nth-child(3) > span {background: #009FDB;}
+    &:nth-child(4) > span {background: #239AC7;}
+    &:nth-child(5) > span {background: #016D96;}
+  }
+}
