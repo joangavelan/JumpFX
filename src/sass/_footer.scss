@@ -1,0 +1,67 @@
+.footer {
+  background-color: #292929;
+  padding: 7rem 3rem;
+
+  &__content {
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+    color: $color-white;
+  }
+
+  &__logo img {
+    height: 20rem;
+  }
+
+  &__social img {
+    height: 4rem;
+    margin: 0 5px;
+  }
+
+  &__nav,
+  &__legal-pages {
+    margin-top: 3rem;
+
+    & a {
+      position: relative;
+      font-size: 1.9rem;
+      margin: 1.2rem;
+
+      &:not(:last-child):after {
+        content: "|";
+        position: absolute;
+        right: -1.7rem;
+      }
+    }
+  }
+
+  &__contact {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+
+    &-tel {
+      font-size: 3.5rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.75;
+      color: #DBDBDB;
+    }
+    
+    &-email {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: #B7B7B7;
+    }
+  }
+
+  &__copyright {
+    font-size: 1.8rem;
+  }
+
+  &__legal-pages {
+    margin: 2rem 0;
+    & > a {
+      font-size: 1.4rem;
+    }
+  }
+}
