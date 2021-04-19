@@ -1,4 +1,4 @@
-<div class="newsletter">
+<section class="newsletter">
   <div class="content-wrapper">
     <p>Join our newsletter and be among the first financial advisors to hear about proven marketing strategies to bring huge returns for your business</p>
     <form class="newsletter__form">
@@ -13,4 +13,4 @@
       <input type="submit" value="yes, join for free now">
     </form>
   </div>
-</div>
+</section>

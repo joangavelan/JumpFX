@@ -2,7 +2,7 @@
     $upload_dir = wp_upload_dir();
 ?>
 
-<div class="process">
+<section class="process">
   <div class="content-wrapper">
     <div class="process__heading">
       <h2 class="sub-heading dark">How to work with us?</h2>
@@ -64,5 +64,4 @@
       </div>
     </div>
   </div>
-  
-</div>
+</section>
